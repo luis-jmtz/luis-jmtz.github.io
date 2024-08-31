@@ -6,29 +6,77 @@
     <title>Luis J. Martinez - Resume</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
             padding: 0;
             background-color: #f4f4f4;
         }
         .container {
             max-width: 800px;
-            margin: auto;
-            background: white;
+            margin: 50px auto;
+            background: #ffffff;
             padding: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        h1, h2, h3 {
-            color: #333;
+        h1 {
+            color: #2C3E50;
+            border-bottom: 2px solid #2C3E50;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #2C3E50;
+            margin-top: 30px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
         }
         p {
             color: #555;
-        }
-        .section {
-            margin-bottom: 20px;
+            line-height: 1.6;
+            margin-bottom: 10px;
         }
         .contact-info {
             margin-bottom: 20px;
+            padding: 10px;
+            background-color: #e9f1f7;
+            border-radius: 5px;
+        }
+        .contact-info p {
+            margin: 5px 0;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        a {
+            color: #2C3E50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .skills-section {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .skills-list {
+            list-style-type: none;
+            padding: 0;
+            flex: 1;
+            margin-right: 20px;
+        }
+        .skills-list li {
+            background: #2C3E50;
+            color: white;
+            padding: 8px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .skills-list li.proficient {
+            background: #3498db;
+        }
+        .skills-list li.experience {
+            background: #95a5a6;
         }
     </style>
 </head>
@@ -56,28 +104,28 @@
             Receiving Assistant (Work Study) <br>
             <em>09/21 - Present</em></p>
             <ul>
-                <li>Starting at 7am, receive and organize food shipments for Occidental College’s primary dining area for 2 to 3 hours</li>
-                <li>Clean storage areas to maintain high safety standards</li>
-                <li>Deliver food to chefs to assure the scheduled menu is prepared on time</li>
+                <li>Receive and organize food shipments for Occidental College’s primary dining area.</li>
+                <li>Clean storage areas to maintain high safety standards.</li>
+                <li>Deliver food to chefs to assure the scheduled menu is prepared on time.</li>
             </ul>
             
             <p><strong>Hayes Carpentry, Houston, TX</strong> <br>
             Assistant Carpenter <br>
             <em>06/2022 - 08/2022</em></p>
             <ul>
-                <li>Worked 40 - 50 hours per week, starting at 6 am between Monday and Friday</li>
-                <li>Finished staircase railing and installed decorative frames for Houston Christian University’s new Morris Family Center for Law & Liberty</li>
-                <li>Installed shelves and cabinets for several private residences as part of a property-wide renovation or new construction</li>
-                <li>Cleaned and organized workspace to create a safe and effective work environment</li>
+                <li>Worked 40 - 50 hours per week, starting at 6 am between Monday and Friday.</li>
+                <li>Installed decorative frames for Houston Christian University’s Morris Family Center for Law & Liberty.</li>
+                <li>Installed shelves and cabinets for private residences.</li>
+                <li>Maintained a clean and safe workspace.</li>
             </ul>
             
             <p><strong>Steam Coders, Pasadena, CA</strong> <br>
             Remote Intern <br>
             <em>08/2021 - 12/2021</em></p>
             <ul>
-                <li>Worked for a non-profit focused on teaching underprivileged students to code</li>
-                <li>Created a survey to assist staff in verifying that their new math tutoring program was meeting their objectives</li>
-                <li>Utilized Jupyter Notebooks to visualize survey data for easy presentation to potential donors</li>
+                <li>Worked with a non-profit focused on teaching coding to underprivileged students.</li>
+                <li>Created a survey to evaluate the effectiveness of a new math tutoring program.</li>
+                <li>Visualized survey data using Jupyter Notebooks for presentations to potential donors.</li>
             </ul>
         </div>
         
@@ -91,10 +139,20 @@
         
         <div class="section">
             <h2>Skills</h2>
-            <ul>
-                <li><strong>Technical:</strong> Proficiency in Java and Python; Experience with C, C#, Jupyter Notebooks, Unity, and MIPS Assembly Language</li>
-                <li><strong>Language:</strong> Spanish - Conversational</li>
-            </ul>
+            <div class="skills-section">
+                <ul class="skills-list">
+                    <li class="proficient">Java</li>
+                    <li class="proficient">Python</li>
+                </ul>
+                <ul class="skills-list">
+                    <li class="experience">C</li>
+                    <li class="experience">C#</li>
+                    <li class="experience">Jupyter Notebooks</li>
+                    <li class="experience">Unity</li>
+                    <li class="experience">MIPS Assembly</li>
+                </ul>
+            </div>
+            <p><strong>Language:</strong> Spanish - Conversational</p>
         </div>
     </div>
 </body>
